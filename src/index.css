@@ -1,0 +1,153 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+
+  body {
+    @apply m-0 min-h-screen bg-slate-50 font-sans text-slate-900 dark:bg-slate-950 dark:text-slate-100;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+}
+
+@layer components {
+  .app-shell {
+    @apply min-h-screen bg-gradient-to-b from-slate-50 via-slate-50 to-indigo-50/40 dark:from-slate-950 dark:via-slate-950 dark:to-indigo-950/30;
+  }
+
+  .input {
+    @apply rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm
+      placeholder:text-slate-400
+      focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/30
+      dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-500;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-xl bg-indigo-600 px-4 py-2 text-sm font-semibold text-white
+      shadow-sm transition hover:bg-indigo-500
+      focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2
+      disabled:cursor-not-allowed disabled:opacity-50
+      dark:focus-visible:ring-offset-slate-900;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700
+      shadow-sm transition hover:bg-slate-50
+      focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2
+      dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100 dark:hover:bg-slate-700
+      dark:focus-visible:ring-offset-slate-900;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-xl px-3 py-2 text-sm font-medium text-slate-600
+      transition hover:bg-slate-100 hover:text-slate-900
+      focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2
+      dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white
+      dark:focus-visible:ring-offset-slate-900;
+  }
+
+  .btn-danger {
+    @apply inline-flex items-center justify-center rounded-xl px-3 py-2 text-sm font-medium text-rose-600
+      transition hover:bg-rose-50
+      focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-500 focus-visible:ring-offset-2
+      dark:text-rose-400 dark:hover:bg-rose-950/50
+      dark:focus-visible:ring-offset-slate-900;
+  }
+
+  .btn-again {
+    @apply inline-flex items-center justify-center rounded-xl border-2 border-amber-400 bg-amber-50 px-4 py-3 text-sm font-semibold text-amber-800
+      shadow-sm transition hover:bg-amber-100
+      focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2
+      disabled:cursor-not-allowed disabled:opacity-50
+      dark:border-amber-600 dark:bg-amber-950/50 dark:text-amber-200 dark:hover:bg-amber-900/50
+      dark:focus-visible:ring-offset-slate-900;
+  }
+
+  .btn-good {
+    @apply inline-flex items-center justify-center rounded-xl border-2 border-emerald-400 bg-emerald-50 px-4 py-3 text-sm font-semibold text-emerald-800
+      shadow-sm transition hover:bg-emerald-100
+      focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2
+      disabled:cursor-not-allowed disabled:opacity-50
+      dark:border-emerald-600 dark:bg-emerald-950/50 dark:text-emerald-200 dark:hover:bg-emerald-900/50
+      dark:focus-visible:ring-offset-slate-900;
+  }
+}
+
+/* 3D flashcard flip */
+.flashcard-scene {
+  perspective: 1200px;
+  min-height: 280px;
+  height: clamp(260px, 40vh, 360px);
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.flashcard-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.flashcard-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.75rem;
+  border-radius: 1.25rem;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  box-shadow:
+    0 10px 40px -12px rgb(15 23 42 / 0.2),
+    0 0 0 1px rgb(15 23 42 / 0.06);
+}
+
+.flashcard-front {
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.flashcard-back {
+  background: linear-gradient(145deg, #eef2ff 0%, #ffffff 55%, #ecfdf5 100%);
+  transform: rotateY(180deg);
+}
+
+@media (prefers-color-scheme: dark) {
+  .flashcard-front {
+    background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+    box-shadow:
+      0 10px 40px -12px rgb(0 0 0 / 0.5),
+      0 0 0 1px rgb(148 163 184 / 0.15);
+  }
+
+  .flashcard-back {
+    background: linear-gradient(145deg, #312e81 0%, #1e293b 50%, #064e3b 100%);
+    box-shadow:
+      0 10px 40px -12px rgb(0 0 0 / 0.5),
+      0 0 0 1px rgb(148 163 184 / 0.15);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flashcard-inner {
+    transition: none;
+  }
+}

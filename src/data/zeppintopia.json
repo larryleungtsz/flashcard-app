@@ -1,0 +1,698 @@
+{
+  "replace_existing_deck": true,
+  "deck": {
+    "name": "zeppintopia ordering",
+    "language": "ja"
+  },
+  "instructions_for_importer": [
+    "DELETE existing Words whose lemma contains an aspect suffix (from general image, shadowing, etc.).",
+    "Replace the deck with words[] below. One list row = one words[].lemma.",
+    "Do not create a Word from prompt text. prompt stays on the Aspect only.",
+    "Review queue is Word-level. Aspects are sampled from words[].aspects.",
+    "media_url is the SmartCards comment (image/audio/link). Show it on the back."
+  ],
+  "words": [
+    {
+      "lemma": "いらっしゃいませ",
+      "meaning": "歡迎光臨（進店招呼）",
+      "language": "ja",
+      "stage": 0,
+      "needs_script": false,
+      "aspects": [
+        {
+          "code": "palace_img",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "いらっしゃいませ from general image",
+          "answer": "歡迎光臨（進店招呼）",
+          "media_url": "https://grok.com/imagine/post/06f3be55-6515-4954-b37e-381734498afd?source=copy_link&platform=ios&t=9b5217268516"
+        },
+        {
+          "code": "mnem_img",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "いらっしゃいませ mnemonic image",
+          "answer": "歡迎光臨（進店招呼）",
+          "media_url": "https://grok.com/imagine/post/1b499f70-30e5-43e5-8105-7469e5f082f7?source=copy_link&platform=ios&t=f13a1b65cd68"
+        },
+        {
+          "code": "mnem_story",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "いらっしゃいませ story",
+          "answer": "歡迎光臨（進店招呼）",
+          "media_url": "https://grok.com/share/c2hhcmQtMi1jb3B5_90c76f9f-e4f4-4697-8daa-a4d884fc3e1e"
+        },
+        {
+          "code": "youglish",
+          "type": "motor",
+          "status": "live",
+          "prompt": "いらっしゃいませ youglish",
+          "answer": "歡迎光臨（進店招呼）",
+          "media_url": "https://youglish.com/pronounce/%E3%81%84%E3%82%89%E3%81%A3%E3%81%97%E3%82%83%E3%81%84%E3%81%BE%E3%81%9B/japanese"
+        },
+        {
+          "code": "ai_sents",
+          "type": "motor",
+          "status": "live",
+          "prompt": "いらっしゃいませ example sentences",
+          "answer": "歡迎光臨（進店招呼）",
+          "media_url": "https://grok.com/share/c2hhcmQtMi1jb3B5_0701c39c-d4b5-4010-8513-fb465f00e37b"
+        },
+        {
+          "code": "shadow_025",
+          "type": "motor",
+          "status": "live",
+          "prompt": "いらっしゃいませ 0.25 word shadowing",
+          "answer": "歡迎光臨（進店招呼）",
+          "media_url": "https://youtu.be/afqGx4d3_Jo?si=M8EA_HGccPaK94ah"
+        },
+        {
+          "code": "tone_05",
+          "type": "motor",
+          "status": "live",
+          "prompt": "いらっしゃいませ 0.5 tone shadowing",
+          "answer": "歡迎光臨（進店招呼）",
+          "media_url": "https://youtu.be/afqGx4d3_Jo?si=M8EA_HGccPaK94ah"
+        },
+        {
+          "code": "core_l1_speak",
+          "type": "core",
+          "status": "live",
+          "prompt": "歡迎光臨（進店招呼）  → 出聲講出日文",
+          "answer": "いらっしゃいませ",
+          "media_url": ""
+        }
+      ]
+    },
+    {
+      "lemma": "ご注文は",
+      "meaning": "請問要點……",
+      "language": "ja",
+      "stage": 0,
+      "needs_script": false,
+      "aspects": [
+        {
+          "code": "mnem_img",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "ご注文は mnemonic image",
+          "answer": "請問要點……",
+          "media_url": "https://grok.com/imagine/post/71646c79-2d60-4713-a1db-f1a4cecdae5c?source=copy_link&platform=ios&t=8a90c84bd932"
+        },
+        {
+          "code": "mnem_story",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "ご注文は story",
+          "answer": "請問要點……",
+          "media_url": "https://grok.com/share/c2hhcmQtMi1jb3B5_776e3cb4-6df2-484c-9f5e-03326c0cf333"
+        },
+        {
+          "code": "palace_img",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "ご注文は from general image",
+          "answer": "請問要點……",
+          "media_url": "https://grok.com/imagine/post/06f3be55-6515-4954-b37e-381734498afd?source=copy_link&platform=ios&t=9b5217268516"
+        },
+        {
+          "code": "youglish",
+          "type": "motor",
+          "status": "live",
+          "prompt": "ご注文は youglish",
+          "answer": "請問要點……",
+          "media_url": "https://youglish.com/pronounce/%E3%81%94%E6%B3%A8%E6%96%87%E3%81%AF/japanese"
+        },
+        {
+          "code": "ai_sents",
+          "type": "motor",
+          "status": "live",
+          "prompt": "ご注文は example sentences",
+          "answer": "請問要點……",
+          "media_url": "https://grok.com/share/c2hhcmQtMi1jb3B5_aadc1b2a-c6e9-41c3-820b-738747785824"
+        },
+        {
+          "code": "shadow_025",
+          "type": "motor",
+          "status": "live",
+          "prompt": "ご注文は 0.25 worf shadowing",
+          "answer": "請問要點……",
+          "media_url": "https://youtu.be/afqGx4d3_Jo?si=M8EA_HGccPaK94ah"
+        },
+        {
+          "code": "tone_05",
+          "type": "motor",
+          "status": "live",
+          "prompt": "ご注文は 0.5 tone shadowing",
+          "answer": "請問要點……",
+          "media_url": "https://youtu.be/afqGx4d3_Jo?si=M8EA_HGccPaK94ah"
+        },
+        {
+          "code": "core_l1_speak",
+          "type": "core",
+          "status": "live",
+          "prompt": "請問要點……  → 出聲講出日文",
+          "answer": "ご注文は",
+          "media_url": ""
+        }
+      ]
+    },
+    {
+      "lemma": "お決まりですか？",
+      "meaning": "決定好了嗎？",
+      "language": "ja",
+      "stage": 0,
+      "needs_script": false,
+      "aspects": [
+        {
+          "code": "mnem_img",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "お決まりですか？ mnemonic image",
+          "answer": "決定好了嗎？",
+          "media_url": "https://share.gemini.google/g2R1tiIjMfRd"
+        },
+        {
+          "code": "mnem_story",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "お決まりですか？ story",
+          "answer": "決定好了嗎？",
+          "media_url": "https://share.gemini.google/URw4IuCz317h"
+        },
+        {
+          "code": "palace_img",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "お決まりですか？ general image",
+          "answer": "決定好了嗎？",
+          "media_url": "https://grok.com/imagine/post/06f3be55-6515-4954-b37e-381734498afd?source=copy_link&platform=ios&t=9b5217268516"
+        },
+        {
+          "code": "youglish",
+          "type": "motor",
+          "status": "live",
+          "prompt": "お決まりですか？ youglish",
+          "answer": "決定好了嗎？",
+          "media_url": "https://youglish.com/pronounce/%E3%81%8A%E6%B1%BA%E3%81%BE%E3%82%8A%E3%81%A7%E3%81%99%E3%81%8B_%3F/japanese"
+        },
+        {
+          "code": "ai_sents",
+          "type": "motor",
+          "status": "live",
+          "prompt": "お決まりですか？ example sentences",
+          "answer": "決定好了嗎？",
+          "media_url": "https://share.gemini.google/d85IO1D1jO9I"
+        },
+        {
+          "code": "shadow_025",
+          "type": "motor",
+          "status": "live",
+          "prompt": "お決まりですか？ 0.25 word shadowing",
+          "answer": "決定好了嗎？",
+          "media_url": "https://youtu.be/afqGx4d3_Jo?si=M8EA_HGccPaK94ah"
+        },
+        {
+          "code": "tone_05",
+          "type": "motor",
+          "status": "live",
+          "prompt": "お決まりですか？ 0.5 shadowing tone",
+          "answer": "決定好了嗎？",
+          "media_url": "https://youtu.be/afqGx4d3_Jo?si=M8EA_HGccPaK94ah"
+        },
+        {
+          "code": "core_l1_speak",
+          "type": "core",
+          "status": "live",
+          "prompt": "決定好了嗎？  → 出聲講出日文",
+          "answer": "お決まりですか？",
+          "media_url": ""
+        }
+      ]
+    },
+    {
+      "lemma": "絶品ビーフバーガーの",
+      "meaning": "極品牛肉漢堡的……",
+      "language": "ja",
+      "stage": 0,
+      "needs_script": false,
+      "aspects": [
+        {
+          "code": "mnem_img",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "絶品ビーフバーガーの mnemonic image",
+          "answer": "極品牛肉漢堡的……",
+          "media_url": "https://share.gemini.google/j4Dn6DIY5EIx"
+        },
+        {
+          "code": "palace_img",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "絶品ビーフバーガーの general image",
+          "answer": "極品牛肉漢堡的……",
+          "media_url": "https://grok.com/imagine/post/06f3be55-6515-4954-b37e-381734498afd?source=copy_link&platform=ios&t=9b5217268516"
+        },
+        {
+          "code": "mnem_story",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "絶品ビーフバーガーの story",
+          "answer": "極品牛肉漢堡的……",
+          "media_url": "https://grok.com/share/c2hhcmQtMi1jb3B5_2804da91-1a55-48be-b80a-3a7bf164dcc4"
+        },
+        {
+          "code": "youglish",
+          "type": "motor",
+          "status": "live",
+          "prompt": "絶品ビーフバーガーの youglish 2",
+          "answer": "極品牛肉漢堡的……",
+          "media_url": "https://youglish.com/pronounce/%E3%83%93%E3%83%BC%E3%83%95%E3%83%90%E3%83%BC%E3%82%AC%E3%83%BC/japanese"
+        },
+        {
+          "code": "ai_sents",
+          "type": "motor",
+          "status": "live",
+          "prompt": "絶品ビーフバーガーの example sentences",
+          "answer": "極品牛肉漢堡的……",
+          "media_url": "https://share.gemini.google/otHPS3chK9at"
+        },
+        {
+          "code": "shadow_025",
+          "type": "motor",
+          "status": "live",
+          "prompt": "絶品ビーフバーガーの 0.25 word shadowinf",
+          "answer": "極品牛肉漢堡的……",
+          "media_url": "https://youtu.be/afqGx4d3_Jo?t=3&si=qqW_kvxwin8SSzp7"
+        },
+        {
+          "code": "tone_05",
+          "type": "motor",
+          "status": "live",
+          "prompt": "絶品ビーフバーガーの 0.5 tone shadowing",
+          "answer": "極品牛肉漢堡的……",
+          "media_url": "https://youtu.be/afqGx4d3_Jo?t=3&si=qqW_kvxwin8SSzp7"
+        },
+        {
+          "code": "youglish",
+          "type": "motor",
+          "status": "live",
+          "prompt": "絶品ビーフバーガーの youglish 1",
+          "answer": "極品牛肉漢堡的……",
+          "media_url": "https://youglish.com/pronounce/%E7%B5%B6%E5%93%81/japanese"
+        },
+        {
+          "code": "core_l1_speak",
+          "type": "core",
+          "status": "live",
+          "prompt": "極品牛肉漢堡的……  → 出聲講出日文",
+          "answer": "絶品ビーフバーガーの",
+          "media_url": ""
+        }
+      ]
+    },
+    {
+      "lemma": "セットを",
+      "meaning": "套餐（を）",
+      "language": "ja",
+      "stage": 0,
+      "needs_script": false,
+      "aspects": [
+        {
+          "code": "palace_img",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "セットを general image",
+          "answer": "套餐（を）",
+          "media_url": "https://grok.com/imagine/post/06f3be55-6515-4954-b37e-381734498afd?source=copy_link&platform=ios&t=9b5217268516"
+        },
+        {
+          "code": "mnem_img",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "セットを menmonic image",
+          "answer": "套餐（を）",
+          "media_url": "https://share.gemini.google/vVjILpgRuctB"
+        },
+        {
+          "code": "mnem_story",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "セットを story",
+          "answer": "套餐（を）",
+          "media_url": "https://grok.com/share/c2hhcmQtMi1jb3B5_f4555606-08b8-4fc9-b715-f23c1daa524f"
+        },
+        {
+          "code": "ai_sents",
+          "type": "motor",
+          "status": "live",
+          "prompt": "セットを example sentences",
+          "answer": "套餐（を）",
+          "media_url": "https://grok.com/share/c2hhcmQtMi1jb3B5_d5d30271-2f5e-4363-9a45-930d584541b5"
+        },
+        {
+          "code": "youglish",
+          "type": "motor",
+          "status": "live",
+          "prompt": "セットを youglish",
+          "answer": "套餐（を）",
+          "media_url": "https://youglish.com/pronounce/%E3%82%BB%E3%83%83%E3%83%88%E3%82%92/japanese"
+        },
+        {
+          "code": "shadow_025",
+          "type": "motor",
+          "status": "live",
+          "prompt": "セットを 0.25 word shadowing",
+          "answer": "套餐（を）",
+          "media_url": "https://youtu.be/afqGx4d3_Jo?t=3&si=qqW_kvxwin8SSzp7"
+        },
+        {
+          "code": "tone_05",
+          "type": "motor",
+          "status": "live",
+          "prompt": "セットを 0.5 tone shadowing",
+          "answer": "套餐（を）",
+          "media_url": "https://youtu.be/afqGx4d3_Jo?t=3&si=qqW_kvxwin8SSzp7"
+        },
+        {
+          "code": "core_l1_speak",
+          "type": "core",
+          "status": "live",
+          "prompt": "套餐（を）  → 出聲講出日文",
+          "answer": "セットを",
+          "media_url": ""
+        }
+      ]
+    },
+    {
+      "lemma": "一つ",
+      "meaning": "一份／一個",
+      "language": "ja",
+      "stage": 0,
+      "needs_script": false,
+      "aspects": [
+        {
+          "code": "palace_img",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "一つ general inage",
+          "answer": "一份／一個",
+          "media_url": "https://grok.com/imagine/post/06f3be55-6515-4954-b37e-381734498afd?source=copy_link&platform=ios&t=9b5217268516"
+        },
+        {
+          "code": "shadow_025",
+          "type": "motor",
+          "status": "live",
+          "prompt": "一つ 0.25 word shadowing",
+          "answer": "一份／一個",
+          "media_url": "https://youtu.be/afqGx4d3_Jo?t=3&si=qqW_kvxwin8SSzp7"
+        },
+        {
+          "code": "tone_05",
+          "type": "motor",
+          "status": "live",
+          "prompt": "一つ 0.5 tone shadowing",
+          "answer": "一份／一個",
+          "media_url": "https://youtu.be/afqGx4d3_Jo?t=3&si=qqW_kvxwin8SSzp7"
+        },
+        {
+          "code": "core_l1_speak",
+          "type": "core",
+          "status": "live",
+          "prompt": "一份／一個  → 出聲講出日文",
+          "answer": "一つ",
+          "media_url": ""
+        }
+      ]
+    },
+    {
+      "lemma": "お願いします",
+      "meaning": "拜託／請給我",
+      "language": "ja",
+      "stage": 0,
+      "needs_script": false,
+      "aspects": [
+        {
+          "code": "palace_img",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "お願いします general image",
+          "answer": "拜託／請給我",
+          "media_url": "https://grok.com/imagine/post/06f3be55-6515-4954-b37e-381734498afd?source=copy_link&platform=ios&t=9b5217268516"
+        },
+        {
+          "code": "shadow_025",
+          "type": "motor",
+          "status": "live",
+          "prompt": "お願いします 0.25 word shadowing",
+          "answer": "拜託／請給我",
+          "media_url": "https://youtu.be/afqGx4d3_Jo?t=3&si=qqW_kvxwin8SSzp7"
+        },
+        {
+          "code": "tone_05",
+          "type": "motor",
+          "status": "live",
+          "prompt": "お願いします tone shadowing 0.5",
+          "answer": "拜託／請給我",
+          "media_url": "https://youtu.be/afqGx4d3_Jo?t=3&si=qqW_kvxwin8SSzp7"
+        },
+        {
+          "code": "core_l1_speak",
+          "type": "core",
+          "status": "live",
+          "prompt": "拜託／請給我  → 出聲講出日文",
+          "answer": "お願いします",
+          "media_url": ""
+        }
+      ]
+    },
+    {
+      "lemma": "ご注文はお決まりですか？",
+      "meaning": "點餐決定好了嗎？（整句 sequence）",
+      "language": "ja",
+      "stage": 0,
+      "needs_script": false,
+      "aspects": [
+        {
+          "code": "shadow_05",
+          "type": "motor",
+          "status": "live",
+          "prompt": "ご注文はお決まりですか？ 0.5 word shadowing",
+          "answer": "點餐決定好了嗎？（整句 sequence）",
+          "media_url": "https://youtu.be/afqGx4d3_Jo?si=M8EA_HGccPaK94ah"
+        },
+        {
+          "code": "tone_10",
+          "type": "motor",
+          "status": "live",
+          "prompt": "ご注文はお決まりですか？ 1.0 tone shadowing",
+          "answer": "點餐決定好了嗎？（整句 sequence）",
+          "media_url": "https://youtu.be/afqGx4d3_Jo?si=M8EA_HGccPaK94ah"
+        },
+        {
+          "code": "seq_practice",
+          "type": "motor",
+          "status": "live",
+          "prompt": "ご注文はお決まりですか？ sequence practice",
+          "answer": "點餐決定好了嗎？（整句 sequence）",
+          "media_url": "https://grok.com/imagine/post/06f3be55-6515-4954-b37e-381734498afd?source=copy_link&platform=ios&t=9b5217268516"
+        },
+        {
+          "code": "seq_mnem",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "ご注文はお決まりですか？ sequence2mnemonic",
+          "answer": "點餐決定好了嗎？（整句 sequence）",
+          "media_url": "https://grok.com/imagine/post/06f3be55-6515-4954-b37e-381734498afd?source=copy_link&platform=ios&t=9b5217268516"
+        },
+        {
+          "code": "core_l1_speak",
+          "type": "core",
+          "status": "live",
+          "prompt": "點餐決定好了嗎？（整句 sequence）  → 出聲講出日文",
+          "answer": "ご注文はお決まりですか？",
+          "media_url": ""
+        }
+      ]
+    },
+    {
+      "lemma": "たいへん",
+      "meaning": "非常／很嚴重",
+      "language": "ja",
+      "stage": 0,
+      "needs_script": false,
+      "aspects": [
+        {
+          "code": "palace_img",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "たいへん general image",
+          "answer": "非常／很嚴重",
+          "media_url": "https://grok.com/imagine/post/e1da8a11-d5c2-4c63-b839-dc9651cd7244?source=copy_link&platform=ios&t=b6a3831a751c"
+        },
+        {
+          "code": "loci_text",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "たいへん loci description",
+          "answer": "非常／很嚴重",
+          "media_url": "https://grok.com/share/c2hhcmQtMi1jb3B5_a6ca19a7-f9d7-4c00-8cb8-2b8f0d48d36e"
+        },
+        {
+          "code": "mnem_img",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "たいへん mnemonic image",
+          "answer": "非常／很嚴重",
+          "media_url": "https://share.gemini.google/tyoruFv7Sttt"
+        },
+        {
+          "code": "mnem_story",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "たいへん story",
+          "answer": "非常／很嚴重",
+          "media_url": "https://grok.com/share/c2hhcmQtMi1jb3B5_aba81919-2e54-4c97-b799-430e3db05133"
+        },
+        {
+          "code": "youglish",
+          "type": "motor",
+          "status": "live",
+          "prompt": "たいへん youglish 0.5",
+          "answer": "非常／很嚴重",
+          "media_url": "https://youglish.com/pronounce/%E3%81%9F%E3%81%84%E3%81%B8%E3%82%93/japanese#google_vignette"
+        },
+        {
+          "code": "ai_sents",
+          "type": "motor",
+          "status": "live",
+          "prompt": "たいへん example sentences",
+          "answer": "非常／很嚴重",
+          "media_url": "https://share.gemini.google/89p8absV87SU"
+        },
+        {
+          "code": "shadow_025",
+          "type": "motor",
+          "status": "live",
+          "prompt": "たいへん 0.25 word shadowing",
+          "answer": "非常／很嚴重",
+          "media_url": "https://youtu.be/2CUhk1lNN-Q?si=uZdIGkECNp9JFPKp"
+        },
+        {
+          "code": "tone_05",
+          "type": "motor",
+          "status": "live",
+          "prompt": "たいへん 0.5 tone shadowing",
+          "answer": "非常／很嚴重",
+          "media_url": "https://youtu.be/2CUhk1lNN-Q?si=uZdIGkECNp9JFPKp"
+        },
+        {
+          "code": "object_rel",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "たいへん meaning object relation",
+          "answer": "非常／很嚴重",
+          "media_url": "https://grok.com/share/c2hhcmQtMi1jb3B5_c3472a73-1e7f-486b-934c-57e25d708d62"
+        },
+        {
+          "code": "core_l1_image",
+          "type": "core",
+          "status": "live",
+          "prompt": "Very much / Exceedingly / Serious) meaning2mnemonic?",
+          "answer": "非常／很嚴重",
+          "media_url": ""
+        }
+      ]
+    },
+    {
+      "lemma": "お待たせいたしました",
+      "meaning": "讓您久等了",
+      "language": "ja",
+      "stage": 0,
+      "needs_script": false,
+      "aspects": [
+        {
+          "code": "loci_text",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "お待たせいたしました loci deacription",
+          "answer": "讓您久等了",
+          "media_url": "https://grok.com/share/c2hhcmQtMi1jb3B5_e9330087-54a6-4399-8c50-38a4a024f7de"
+        },
+        {
+          "code": "palace_img",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "お待たせいたしました general image",
+          "answer": "讓您久等了",
+          "media_url": "https://grok.com/imagine/post/e1da8a11-d5c2-4c63-b839-dc9651cd7244?source=copy_link&platform=ios&t=b6a3831a751c"
+        },
+        {
+          "code": "mnem_img",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "お待たせいたしました mnemonic image",
+          "answer": "讓您久等了",
+          "media_url": "https://share.gemini.google/QUkjyypl0kuE"
+        },
+        {
+          "code": "mnem_story",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "お待たせいたしました story",
+          "answer": "讓您久等了",
+          "media_url": "https://grok.com/share/c2hhcmQtMi1jb3B5_be827945-7415-4061-a77b-be998e02242e"
+        },
+        {
+          "code": "youglish",
+          "type": "motor",
+          "status": "live",
+          "prompt": "お待たせいたしました youglish",
+          "answer": "讓您久等了",
+          "media_url": "https://youglish.com/pronounce/%E3%81%8A%E5%BE%85%E3%81%9F%E3%81%9B%E3%81%84%E3%81%9F%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/japanese"
+        },
+        {
+          "code": "ai_sents",
+          "type": "motor",
+          "status": "live",
+          "prompt": "お待たせいたしました example sentences",
+          "answer": "讓您久等了",
+          "media_url": "https://share.gemini.google/ZWlBWCifl0Mu"
+        },
+        {
+          "code": "tone_05",
+          "type": "motor",
+          "status": "live",
+          "prompt": "お待たせいたしました 0.5 tone shadowing",
+          "answer": "讓您久等了",
+          "media_url": "https://youtu.be/2CUhk1lNN-Q?si=uZdIGkECNp9JFPKp"
+        },
+        {
+          "code": "shadow_025",
+          "type": "motor",
+          "status": "live",
+          "prompt": "お待たせいたしました 0.25 word shadowing",
+          "answer": "讓您久等了",
+          "media_url": "https://youtu.be/2CUhk1lNN-Q?si=uZdIGkECNp9JFPKp"
+        },
+        {
+          "code": "core_l1_image",
+          "type": "core",
+          "status": "live",
+          "prompt": "Sorry to keep you waiting  meaning2image?",
+          "answer": "讓您久等了",
+          "media_url": "https://share.gemini.google/QUkjyypl0kuE"
+        },
+        {
+          "code": "object_rel",
+          "type": "scaffold",
+          "status": "live",
+          "prompt": "お待たせいたしました object meaning relation",
+          "answer": "讓您久等了",
+          "media_url": "https://grok.com/share/c2hhcmQtMi1jb3B5_cdfdb70f-6c2e-4d2c-8233-21faf9fae0d8"
+        }
+      ]
+    }
+  ]
+}
